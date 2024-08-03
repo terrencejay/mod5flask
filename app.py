@@ -78,26 +78,3 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()
     app.run(debug=True)
-
-# from flask import Flask, render_template
-# from flask_sqlalchemy import SQLAlchemy
-
-# db = SQLAlchemy()
-
-# app = Flask(__name__)
-
-
-# NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFhZXp4dHhicnBrYmh4aXVobGhnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyNjkwODEsImV4cCI6MjAzNzg0NTA4MX0.qMfUuNwoaC24CWuHd6dA-nX8TxOMB6aCsrpqBXmKm2I
-# app.config["SQLALCHEMY_DATABASE_URI"]="postgresql://postgres.aaezxtxbrpkbhxiuhlhg:123Codingtemple123@aws-0-us-west-1.pooler.supabase.com:6543/postgres"
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-
-# db.init_app(app)
-
-# class SupaUser(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     username = db.Column(db.String, unique=True, nullable=False)
-#     email = db.Column(db.String)
-
-# with app.app_context():
-#     db.create_all()
